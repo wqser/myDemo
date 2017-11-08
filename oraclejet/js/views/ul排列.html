@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .ulca{
+            margin: 20px;
+            float: left;
+            width: 50px;
+
+        }
+    </style>
+    <script type="text/javascript" src="jquery-3.1.0.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('input[name="pai"]').change(function () {
+                var c=$('input[name="pai"]:checked').val()
+                if(c=='b'){
+                    $("ul li").addClass("ulca")
+                }else{
+                    $('ul li').removeClass();
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+<div>
+    <input type="radio" name="pai" value="a"/>竖着
+    <input type="radio" name="pai" value="b"/>横着
+</div>
+<div id="ul">
+    <ul>
+        <li>tom</li>
+        <li>jerry</li>
+        <li>peter</li>
+        <li>marin</li>
+    </ul>
+</div>
+</body>
+</html>

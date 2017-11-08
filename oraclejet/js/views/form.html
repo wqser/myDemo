@@ -1,0 +1,71 @@
+<style>
+    #back{
+        width: 20px;
+        height: 20px;
+    }
+    .a{
+        width: 500px;
+        height: 400px;
+        margin: auto;
+    }
+</style>
+<div id="form_" class="form">
+    <div id="form" >
+        <form action="#" method="post" id="Myform">
+            <table class="a">
+
+              <tr>
+                  <td>印刷机型号</td>
+                  <td colspan="2"><input type="text"/></td>
+              </tr>
+              <tr>
+                  <td>纸张幅面</td>
+                  <td><input type="text"/></td>
+                  <td><input type="text"/></td>
+                  <td>mm</td>
+              </tr>
+              <tr>
+                  <td>印版幅面</td>
+                  <td><input type="text"/></td>
+                  <td><input type="text"/></td>
+                  <td>mm</td>
+              </tr>
+                <tr>
+                    <td>有效印刷幅面</td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td>mm</td>
+                </tr>
+                <tr>
+                    <td>色组数量</td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>色组1</td>
+                    <td>
+                        <select id="color">
+                            <option value="">请选择一种颜色</option>
+                            <option value="green">青</option>
+                            <option value="red">品</option>
+                            <option value="yellow">黄</option>
+                            <option value="black">黑</option>
+                        </select>
+                    <td>
+                       <div  id="back"></div>
+                    </td>
+                </tr>
+              <tr>
+                  <td colspan="2">
+                      <input type="submit" value="保存"/>
+                  </td>
+                  <td>
+                      <input type="reset" value="重置">
+                  </td>
+              </tr>
+
+
+
+            </table>
+        </form>
+    </div>
+</div>

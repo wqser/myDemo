@@ -1,0 +1,59 @@
+<div id='button-container'>
+  <span class="oj-choice-row">
+    <input id="disabledControls" type="checkbox"
+           class="oj-checkbox-nocomp" data-bind="checked: disableControls"/>
+    <label for="disabledControls"
+           class="oj-checkbox-label-nocomp">Disable examples</label>
+  </span>
+
+    <table class="demo-info-table demo-recipe-spacing"
+           summary="alternate color buttons"
+           style="width:100%">
+        <thead>
+        <tr>
+            <th scope="col">Class</th>
+            <th scope="col">Button</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">N/A default button
+            </th>
+            <td>
+                <button data-bind="ojComponent: {
+                      component:'ojButton', label: 'Default',
+                      icons: {start:'oj-fwk-icon oj-fwk-icon-clock'},
+                      disabled: false, chroming: 'full'
+                  }">
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code class="demo-selectornames">oj-button-primary</code>
+            </th>
+            <td>
+                <button class="oj-button-primary"
+                        data-bind="ojComponent: {
+                      component:'ojButton', label: 'Primary',
+                      icons: {start:'oj-fwk-icon oj-fwk-icon-clock'},
+                      disabled: disableControls, chroming: 'full'
+                  }">
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code class="demo-selectornames">oj-button-confirm</code>
+            </th>
+            <td>
+                <button class="oj-button-confirm"
+                        data-bind="ojComponent: {
+                      component:'ojButton', label: 'Confirm',
+                      icons: {start:'oj-fwk-icon oj-fwk-icon-clock'},
+                      disabled: disableControls, chroming: 'full'
+                  }">
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

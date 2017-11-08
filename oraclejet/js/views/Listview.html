@@ -1,0 +1,31 @@
+<div id="wqs">
+    <div class="oj-buttonset-width-auto" data-bind="ojComponent: {component: 'ojButtonset', chroming: 'half', checked: activeLayout, optionChange: handleLayoutChange}" aria-label="Choose layout view.">
+        <!-- ko foreach: layoutViewRadios -->
+        <label data-bind="attr: {for: id}"></label>
+        <input type="radio" name="beverage" data-bind="value: id, attr: {id: id},
+		ojComponent: { component: 'ojButton', label: id, icons: {start: icon}, display: 'icons' }"/>
+        <!-- /ko -->
+    </div>
+
+    <div id="listviewcontainer" class="oj-flex oj-sm-flex-wrap-nowrap">
+        <ul id="listview" aria-label="list of contacts"
+            data-bind="ojComponent: {component: 'ojListView', data: dataSource, item: {template: selectTemplate, focusable: itemOnly}, drillMode: 'none',  rootAttributes: {class: 'demo-contacts-container-portrait oj-flex-item'} }">
+        </ul>
+
+        <ul id="indexer" aria-label="indexer" aria-controls="listview"
+            data-bind="ojComponent: {component: 'ojIndexer', data: getIndexerModel(), rootAttributes: {class: 'demo-contacts-container-portrait oj-sm-flex-initial oj-flex-item'} }">
+        </ul>
+    </div>
+</div>
+
+<script type="text/html" id="group_template">
+    <li data-bind="attr: {id: id}">
+        <strong data-bind="text: id"></strong>
+    </li>
+</script>
+
+<script type="text/html" id="item_template">
+    <li data-bind="attr: {id: id}">
+        <span data-bind="text: name"></span>
+    </li>
+</script>

@@ -1,0 +1,28 @@
+<div id='menubutton-container'>
+    <button id="menuButton"
+            data-bind="ojComponent: {component: 'ojButton', label: 'Actions',
+                                   menu: '#myMenu1'}">
+    </button>
+    <!-- To handle menu item selection, use a select listener as shown, not a click listener. -->
+    <ul id="myMenu1" style="display:none"
+        data-bind="ojComponent: {component: 'ojMenu', select: menuItemSelect}">
+        <li id="zoomin">
+            <a href="#"><span class="oj-menu-item-icon oj-fwk-icon oj-fwk-icon-arrow-n"></span>Zoom In</a>
+        </li>
+        <li id="zoomout">
+            <a href="#"><span class="oj-menu-item-icon demo-icon-font demo-bookmark-icon-16"></span>Zoom Out</a>
+        </li>
+        <li id="divider"></li>
+        <li id="save">
+            <a href="#"><span class="oj-menu-item-icon demo-icon-font demo-palette-icon-24"></span>Save</a>
+        </li>
+        <li id="print" class="oj-disabled">
+            <a href="#"><span class="oj-menu-item-icon demo-icon-font demo-chat-icon-24"></span>Print...</a>
+        </li>
+    </ul>
+    <p>
+    <p>
+    <p class="bold">Last selected menu item:
+        <span id="results" data-bind='text: selectedMenuItem'></span>
+    </p>
+</div>

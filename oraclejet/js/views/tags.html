@@ -1,0 +1,52 @@
+<div id="sortTabs" data-bind="ojComponent:{component: 'ojTabs',
+                                           removable:['tid3', 'tid4'],
+                                           reorderable:true}">
+
+    <ul>
+        <li id="tid1"><span>Sortable Tab 1</span></li>
+        <li id="tid2"><span>Sortable Tab 2</span></li>
+        <li id="tid3"><span>Sortable Tab 3</span></li>
+        <li id="tid4"><span>Sortable Tab 4</span></li>
+    </ul>
+
+    <div id="sort-tabs-1">
+        <label id="labelid">Colors</label>
+        <div id="radioid" aria-labelledby="labelid"
+             data-bind="ojComponent: {
+          component: 'ojRadioset',
+          value: currentColor}" >
+        <span class="oj-choice-row">
+            <input id="blueopt" type="radio" name="rbb" value="blue">
+            <label for="blueopt">Blue</label>
+        </span>
+            <span class="oj-choice-row">
+            <input id="greenopt" type="radio" name="rbb" value="green">
+            <label for="greenopt">Green</label>
+        </span>
+            <span class="oj-choice-row">
+            <input id="redopt" type="radio" name="rbb" value="red">
+            <label for="redopt">Red</label>
+        </span>
+        </div>
+    </div>
+    <div id="sort-tabs-2">
+        <div id="scrollableDiv" style="max-height:100px;overflow-y:scroll">
+            <p>Tab 2a Content</p>
+            <p>Tab 2b Content</p>
+            <p>Tab 2c Content</p>
+            <p>Tab 2d Content</p>
+            <p>Tab 2e Content</p>
+            <p>Tab 2f Content</p>
+            <p>Tab 2g Content</p>
+            <p>Tab 2h Content</p>
+            <p>Tab 2i Content</p>
+            <p>Tab 2j Content</p>
+        </div>
+    </div>
+    <div id="sort-tabs-3">
+        <p>Sortable Tab 3 Content</p>
+    </div>
+    <div id="sort-tabs-4">
+        <p>Sortable Tab 4 Content</p>
+    </div>
+</div>

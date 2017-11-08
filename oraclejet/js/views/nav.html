@@ -1,0 +1,26 @@
+<div id="parentDiv">
+
+
+    <div class="oj-offcanvas-outer-wrapper"
+         style="border: 1px solid #d1e6f9; height:200px;">
+
+
+        <div id="drawer"
+             class="oj-offcanvas-start oj-panel oj-panel-alt1"
+             style="width: 200px">
+            <div>Start offcanvas</div>
+        </div>
+
+
+        <div id="main" style="padding: 10px; height: 100%">
+            <button data-bind="click: toggleDrawer,
+                         ojComponent: {component:'ojButton', 
+                         label: 'Toggle start offcanvas', 
+                         chroming: 'half',
+                         display: 'icons', 
+                         icons: {start: 'oj-fwk-icon-hamburger oj-fwk-icon'}}">
+            </button>
+        </div>
+
+    </div>
+</div>

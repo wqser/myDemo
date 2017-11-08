@@ -1,0 +1,23 @@
+<div id='buttons-container'>
+
+    <p class="bold">Poke a Stooge:</p>
+    <div id="stoogeSet" data-bind="ojComponent: {component: 'ojButtonset'}">
+        <button id="Moe"   data-bind="click: buttonClick">Moe</button>
+        <button id="Curly" data-bind="click: buttonClick">Curly</button>
+        <button id="Larry" data-bind="click: buttonClick">Larry</button>
+    </div>
+
+    <p>
+    <p id="results" class="bold" data-bind='text: quote'></p>
+
+    <br><br>
+    <p class="bold">Learn about an Entertainer:</p>
+    <div id="entertainerSet" data-bind="ojComponent: {component: 'ojButtonset'}">
+        <!-- ko foreach: entertainers -->
+        <a id="anchor"
+           data-bind="attr: {id: label, href:url},
+                          ojComponent: { component: 'ojButton', label: label }">
+        </a>
+        <!-- /ko -->
+    </div>
+</div>

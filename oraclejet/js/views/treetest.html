@@ -1,0 +1,55 @@
+    <div>
+        <div class="form-row">
+            <div class="form-1-column">
+
+
+                <div style="margin-left: 20px;position: relative" id="checkboxSetId1" aria-labelledby="mainlabelid"
+                     data-bind="ojComponent: {
+          component: 'ojCheckboxset',
+          value: currentColor}" >
+                    <div style="position: relative">
+                        <span  class="oj-choice-item">
+                            <input id ='jibenopt' type="checkbox" data-bind="checkedValue: 0, checked: selecte1">
+
+                            <label for="jibenopt">基本信息</label>
+                        </span>
+                        <button id = "button1" style="position: absolute;left: -18px;top: 4px;height: 15px;width: 15px;padding: 0px;font-family: serif;" data-bind="click:changeClick">+</button>
+                        <div style = "position: relative;left: 20px;display: none">
+                            <div style="position: relative">
+                                <span  class="oj-choice-item">
+                  <input id ='jibenopt03' type="checkbox" data-bind="checkedValue: 03, checked: select2">
+                  <label for="jibenopt03">客户信息</label>
+                </span>
+                                <button id = "button13" style="position: absolute;left: -18px;top: 4px;height: 15px;width: 15px;padding: 0px;font-family: serif;" data-bind="click:changeClick">+</button>
+                                <div style = "position: relative;left: 20px;display: none">
+                                    <span  class="oj-choice-item">
+                  <input id ='jibenopt031' type="checkbox" data-bind="checkedValue: 31, checked: select3">
+                    <label for="jibenopt031">新增</label>
+                  </span>
+                                    <span  class="oj-choice-item">
+                                      <input id ='jibenopt032' type="checkbox" data-bind="checkedValue: 32, checked: select3">
+
+                    <label for="jibenopt032">右键-设备信息</label>
+                  </span>
+                                    <span  class="oj-choice-item">
+                  <input id ='jibenopt033' type="checkbox" data-bind="checkedValue: 33, checked: select3">
+                    <label for="jibenopt033">删除</label>
+                  </span>
+                                    <span  class="oj-choice-item">
+                  <input id ='jibenopt035' type="checkbox" data-bind="checkedValue: 34, checked: select3">
+                    <label for="jibenopt035">修改</label>
+                  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="oj-dialog-footer">
+        <button data-bind="ojComponent: {component: 'ojButton', label: '确定'}, click: onOkBtnClick"></button>
+        <button data-bind="ojComponent: {component: 'ojButton', label: '取消'}, click: onCancelBtnClick"></button>
+    </div>

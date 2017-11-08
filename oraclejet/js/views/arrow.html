@@ -1,0 +1,69 @@
+<div style="margin: 20px;">
+    <div class="demo-arrow-controls">
+        <label id="navArrowPlacementLabel">Arrow placement</label>
+        <!-- You need to set the aria-labelledby attribute
+             to make this accessible.
+             role="radiogroup" is set for you by ojRadioset. -->
+        <div id="navArrowPlacementRadioset"
+             aria-labelledby="navArrowPlacementLabel"
+             data-bind="ojComponent: {
+             component: 'ojRadioset',
+             value: currentNavArrowPlacement}" >
+        <span class="oj-choice-row">
+          <input id="adjacentopt"
+                 type="radio"
+                 name="placements"
+                 value="adjacent">
+          <label for="adjacentopt">Adjacent</label>
+        </span>
+            <span class="oj-choice-row">
+          <input id="overlayopt"
+                 type="radio"
+                 name="placements"
+                 value="overlay">
+          <label for="overlayopt">Overlay</label>
+        </span>
+        </div>
+    </div>
+
+    <div style="display: inline-block; vertical-align: top;">
+        <label id="navArrowVisibilityLabel">Arrow visibility</label>
+        <!-- You need to set the aria-labelledby attribute
+             to make this accessible.
+             role="radiogroup" is set for you by ojRadioset. -->
+        <div id="navArrowVisibilityRadioset"
+             aria-labelledby="navArrowVisibilityLabel"
+             data-bind="ojComponent: {
+             component: 'ojRadioset',
+             value: currentNavArrowVisibility}" >
+        <span class="oj-choice-row">
+          <input id="autoopt"
+                 type="radio"
+                 name="visibilities"
+                 value="auto">
+          <label for="autoopt">Auto</label>
+        </span>
+            <span class="oj-choice-row">
+          <input id="visibleopt"
+                 type="radio"
+                 name="visibilities"
+                 value="visible">
+          <label for="visibleopt">Visible</label>
+        </span>
+            <span class="oj-choice-row">
+          <input id="hoveropt"
+                 type="radio"
+                 name="visibilities"
+                 value="hover">
+          <label for="hoveropt">Hover</label>
+        </span>
+            <span class="oj-choice-row">
+          <input id="hiddenopt"
+                 type="radio"
+                 name="visibilities"
+                 value="hidden">
+          <label for="hiddenopt">Hidden</label>
+        </span>
+        </div>
+    </div>
+</div>

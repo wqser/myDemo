@@ -1,0 +1,31 @@
+<div id="animationDemo" class="container" style=" height: 340px;position: relative;overflow: hidden;">
+
+    <!-- drawer panel -->
+    <div id="drawer" class="oj-panel oj-panel-alt1" style=" height: 100%;width: 160px;position: absolute;left: -160px;top: 0;">
+        <div data-bind="ojComponent:{
+                        component: 'ojNavigationList',
+                        selection: 'home',
+                        navigationLevel: 'application'}" >
+            <ul>
+                <li id="home"><a href="#">Home</a></li>
+                <li id="gettingstarted"><a href="#">Getting Started</a></li>
+                <li id="cookbook"><a href="#">Cookbook</a></li>
+                <li id="stylelab"><a href="#">Style Lab</a></li>
+                <li id="library"><a href="#" >Library</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- content panel -->
+    <div id="content" class="oj-panel oj-panel-alt2" style=" height: 100%">
+        <button id='nav-button'
+                data-bind="click: buttonClick,
+                       ojComponent: {component:'ojButton',
+                                     display: 'icons',
+                                     icons: {start:'oj-fwk-icon-hamburger oj-fwk-icon'},
+                                     label: 'Drawer'}">
+        </button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, risus ac interdum sollicitudin, sem erat ultrices ipsum, eget vehicula nibh augue sollicitudin ligula. Sed ullamcorper cursus feugiat. Mauris tristique aliquam dictum. Nulla facilisi. Nulla ut sapien sapien. Phasellus tristique arcu id ipsum mattis id aliquam risus sollicitudin.<p>
+    </div>
+
+</div>

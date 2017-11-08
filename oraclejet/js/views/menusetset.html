@@ -1,0 +1,32 @@
+<div id="a" >
+    <button id="menubutton"
+            data-bind="ojComponent:{component: 'ojButton',label: 'Actions',menu: '#Mymenu'  }"></button>
+    <ul id="Mymenu" data-bind="ojComponent: {component: 'ojMenu',select:menuSelect}">
+        <li id="save">
+            <a href="#">
+                <span class="oj-menu-item-icon demo-icon-font demo-palette-icon-24"></span>Save
+            </a>
+        </li>
+        <li id="print" class="oj-disabled" >
+            <a href="#">
+                <span class="oj-menu-item-icon demo-icon-font demo-palette-icon-24"></span>Print
+            </a>
+        </li>
+        <li id="zoom">
+            <a href="#">Zoom</a>
+            <ul>
+                <li id="zoomin">
+                    <a href="#"><span class="oj-menu-item-icon oj-fwk-icon oj-fwk-icon-arrow-n"></span>Zoom In</a>
+                </li>
+                <li id="zoomout">
+                    <a href="#"><span class="oj-menu-item-icon demo-icon-font demo-bookmark-icon-16"></span>Zoom Out</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>
+    <p>
+    <p class="bold">Last selected menu item:
+        <span id="results" data-bind='text: selectedMenuItem'></span>
+    </p>
+</div>

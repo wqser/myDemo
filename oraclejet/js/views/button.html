@@ -1,0 +1,30 @@
+<div id='buttons-container'>
+
+    <p class="bold">In order from most recommended / useful, to least:</p>
+    <button id= "button"
+            data-bind="click: buttonClick,
+                       ojComponent: { component: 'ojButton', label: 'A button element' }">
+    </button>
+
+    <a id="anchor" href="#"
+       data-bind="click: buttonClick,
+                  ojComponent: { component: 'ojButton' }">An anchor</a>
+
+    <input id="inputButton" type="button"
+           data-bind="click: buttonClick,
+                      ojComponent: {component: 'ojButton', label: 'An input button'}"/>
+
+    <input id="submit" type="submit"
+           data-bind="click: buttonClick,
+                      ojComponent: {component: 'ojButton', label: 'A submit button'}"/>
+
+    <input id="reset" type="reset"
+           data-bind="click: buttonClick,
+                      ojComponent: {component: 'ojButton', label: 'A reset button'}"/>
+
+    <p>
+    <p id="last" class="bold">ID of last button to be clicked:
+        <span id="results" data-bind='text: clickedButton'></span>
+    </p>
+</div>
+

@@ -1,0 +1,21 @@
+<div id="buttons-container">
+    <div id="formatset"
+         data-bind="ojComponent: {component: 'ojButtonset', checked: formats,
+                                  optionChange: handleFormatChange}"
+         aria-controls="formattedText">
+
+        <label for="bold">Bold</label>
+        <input id="bold" type="checkbox" value="bold"/>
+        <label for="italic">Italic</label>
+        <input id="italic" type="checkbox" value="italic"/>
+        <label for="underline">Underline</label>
+        <input id="underline" type="checkbox" value="underline"/>
+    </div>
+    <br/><br/>
+    <p><a id="formattedText" href="#" data-bind="text: formattedText,css:classes"></a></p>
+    <p>
+        <button data-bind="click: toggleBold">ToggleBold</button>
+        <button data-bind="click: toggleAll">ToggleAll</button>
+    </p>
+</div>
+

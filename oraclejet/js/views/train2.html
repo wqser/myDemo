@@ -1,0 +1,41 @@
+<div id="train-container" >
+
+    <h3>Stretch full width</h3>
+    <br/>
+    <div style="margin-bottom: 20px">
+        <div class="oj-flex-bar">
+            <div class="oj-flex-bar-start">
+                <button style="vertical-align: top" type="button"
+                        data-bind="click: previousStep2,
+            ojComponent: {
+              component: 'ojButton',
+              disabled: selected2() == 'stp1',
+              label: 'Back',
+              icons:{start:'oj-fwk-icon-caret-start oj-fwk-icon'}}">
+                </button>
+            </div>
+            <div class="oj-flex-bar-middle oj-flex">
+                <div id="train2"
+                     style="min-width:100px"
+                     class="oj-flex-item oj-train-stretch"
+                     data-bind="ojComponent:{
+             component: 'ojTrain',
+             selected: selected2,
+             steps: stepArray2}"></div>
+            </div>
+            <div class="oj-flex-bar-end">
+                <button style="vertical-align: top" type="button"
+                        data-bind="click: nextStep2,
+             ojComponent: {
+               component: 'ojButton',
+               disabled: selected2() == 'stp5',
+               label: 'Next',
+               icons:{end:'oj-fwk-icon-caret-end oj-fwk-icon'}}">
+                </button>
+            </div>
+        </div>
+        <h3 id="currentStepText"
+            data-bind="text: 'You are on ' + selectedText()"
+            style="text-align: center"></h3>
+    </div>
+</div>
